@@ -1,6 +1,6 @@
 name: flutter_photo_editor
-description: Photo editor
-version: 0.0.1
+description: flutter Photo editor
+version: 0.0.2
 homepage: https://github.com/shichonghuotian/flutter_photo_editor
 
 environment:
