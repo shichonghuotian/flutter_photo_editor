@@ -1,8 +1,9 @@
 # flutter_photo_editor
 
 Image Editor Plugin with simple, easy support for image editing using paints,text and emoji like stories.
-![android](../screenshot/android.png "binaryTree")
-![ios](../screenshot/ios.png "binaryTree")
+
+![android](../main/screenshot/android.png "android")
+![ios](../main/screenshot/ios.png "ios")
 
 ## Getting Started
 
