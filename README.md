@@ -2,8 +2,11 @@
 
 Image Editor Plugin with simple, easy support for image editing using paints,text and emoji like stories.
 
-![android](../main/screenshot/android.png "android")
-![ios](../main/screenshot/ios.png "ios")
+![android](../main/screenshot/android.jpg "android")
+android
+
+![ios](../main/screenshot/ios.jpg "ios")
+ios
 
 ## Getting Started
 
