@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="image_done">Done</string>
+    <string name="image_cancel">Cancel</string>
+</resources>

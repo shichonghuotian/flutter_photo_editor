@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.wy.flutter_photo_editor">
+
+
+    <application>
+        <activity android:name="com.vachel.editor.PictureEditActivity"
+            android:theme="@style/EditTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

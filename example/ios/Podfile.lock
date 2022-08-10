@@ -1,0 +1,37 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_photo_editor (0.0.1):
+    - Flutter
+    - ZLImageEditor
+  - image_picker_ios (0.0.1):
+    - Flutter
+  - ZLImageEditor (1.1.1):
+    - ZLImageEditor/Core (= 1.1.1)
+  - ZLImageEditor/Core (1.1.1)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_photo_editor (from `.symlinks/plugins/flutter_photo_editor/ios`)
+  - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
+
+SPEC REPOS:
+  trunk:
+    - ZLImageEditor
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_photo_editor:
+    :path: ".symlinks/plugins/flutter_photo_editor/ios"
+  image_picker_ios:
+    :path: ".symlinks/plugins/image_picker_ios/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  flutter_photo_editor: 68c19bcfdddfbd00804cf835db837fe623d4c679
+  image_picker_ios: b786a5dcf033a8336a657191401bfdf12017dabb
+  ZLImageEditor: 9effe32695bd7da669d6b27c2603bc531123e8a3
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.11.3
