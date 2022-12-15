@@ -446,7 +446,9 @@ public class EditPresenter {
         // 裁剪区域
         canvas.clipRect(mClipWin.isClipping() ? mFrame : mClipFrame);
         // 绘制图片
-        canvas.drawBitmap(mDoodleLayer, null, mFrame, null);
+        if (mDoodleLayer != null && !mDoodleLayer.isRecycled()) {
+            canvas.drawBitmap(mDoodleLayer, null, mFrame, null);
+        }
         if (DEBUG) {
             // Clip 区域
             mPaint.setColor(Color.RED);
@@ -603,7 +605,7 @@ public class EditPresenter {
     }
 
     public float getScale() {
-        return 1f * mFrame.width() / mDoodleLayer.getWidth();
+        return mFrame.width() / (float)mDoodleLayer.getWidth();
     }
 
     public void setScale(float scale) {

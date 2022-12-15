@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -55,18 +57,26 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: Center(
-          child: TextButton(
-            onPressed: () {
-              test();
-            },
-            child: Text("Add photo"),
-          ),
+        body: Column(
+          children: [
+            Center(
+              child: TextButton(
+                onPressed: () {
+                  test();
+                },
+                child: Text("Add photo"),
+              ),
+            ),
+
+            if(imagePath != null)
+              Image.file(File(imagePath!), width: 300, height: 500,)
+          ],
         ),
       ),
     );
   }
 
+  String? imagePath;
 
   void test() async {
     print("start");
@@ -86,6 +96,10 @@ class _MyAppState extends State<MyApp> {
 
     var b = await FlutterPhotoEditor().editImage(path);
 
+    setState(() {
+      imagePath = path;
+
+    });
     print("end : $b");
   }
 
